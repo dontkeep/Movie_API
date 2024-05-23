@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="125dp"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  app:cardCornerRadius="8dp"
+  app:cardElevation="5dp"
+  app:cardPreventCornerOverlap="true"
+  app:cardUseCompatPadding="true"
+  android:id="@+id/cardView">
+  <RelativeLayout
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+      android:id="@+id/image"
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@drawable/ic_launcher_background"
+      android:contentDescription="CardImageViewDesc" />
+    <TextView
+      android:id="@+id/title"
+      android:layout_width="250dp"
+      android:layout_height="wrap_content"
+      android:layout_alignStart="@+id/image"
+      android:layout_marginStart="102dp"
+      android:layout_marginEnd="-92dp"
+      android:layout_marginTop="10dp"
+      android:fontFamily="sans-serif"
+      android:padding="5dp"
+      android:text="LOREM IPSUM"
+      android:textSize="13sp"
+      android:textStyle="bold" />
+
+    <TextView
+      android:id="@+id/overView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignStart="@+id/image"
+      android:layout_marginStart="103dp"
+      android:layout_marginTop="38dp"
+      android:fontFamily="sans-serif"
+      android:maxLines="2"
+      android:padding="5dp"
+      android:text="overview"
+      android:textSize="12sp"
+      android:textStyle="italic" />
+
+    <TextView
+      android:id="@+id/rating"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignStart="@+id/image"
+      android:layout_alignBottom="@id/image"
+      android:layout_marginStart="103dp"
+      android:layout_marginBottom="10dp"
+      android:fontFamily="sans-serif"
+      android:maxLines="2"
+      android:padding="5dp"
+      android:text="overview"
+      android:textSize="10sp"
+      android:textStyle="italic" />
+
+  </RelativeLayout>
+</androidx.cardview.widget.CardView>
